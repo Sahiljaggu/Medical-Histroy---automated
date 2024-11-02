@@ -1,0 +1,178 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;en&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>    &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;title&gt;Medical History Tracker&lt;/title&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>    &lt;h1&gt;Medical History Tracker&lt;/h1&gt;</p>
+
+<p class=MsoNormal>    &lt;form id=&quot;medicalForm&quot;&gt;</p>
+
+<p class=MsoNormal>        &lt;label
+for=&quot;name&quot;&gt;Name:&lt;/label&gt;</p>
+
+<p class=MsoNormal>        &lt;input type=&quot;text&quot; id=&quot;name&quot;
+name=&quot;name&quot; required&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>        </p>
+
+<p class=MsoNormal>        &lt;label for=&quot;age&quot;&gt;Age:&lt;/label&gt;</p>
+
+<p class=MsoNormal>        &lt;input type=&quot;number&quot; id=&quot;age&quot;
+name=&quot;age&quot; required&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;label for=&quot;conditions&quot;&gt;Medical
+Conditions:&lt;/label&gt;</p>
+
+<p class=MsoNormal>        &lt;textarea id=&quot;conditions&quot;
+name=&quot;conditions&quot; placeholder=&quot;e.g., Diabetes,
+Hypertension&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>        </p>
+
+<p class=MsoNormal>        &lt;label for=&quot;medications&quot;&gt;Current
+Medications:&lt;/label&gt;</p>
+
+<p class=MsoNormal>        &lt;textarea id=&quot;medications&quot;
+name=&quot;medications&quot; placeholder=&quot;e.g., Metformin 500mg
+daily&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;label for=&quot;symptoms&quot;&gt;Recent
+Symptoms:&lt;/label&gt;</p>
+
+<p class=MsoNormal>        &lt;textarea id=&quot;symptoms&quot;
+name=&quot;symptoms&quot; placeholder=&quot;e.g., Chest pain,
+Fatigue&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;button type=&quot;button&quot;
+onclick=&quot;saveData()&quot;&gt;Save Medical History&lt;/button&gt;</p>
+
+<p class=MsoNormal>    &lt;/form&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;h2&gt;Medical History Summary&lt;/h2&gt;</p>
+
+<p class=MsoNormal>    &lt;div id=&quot;summary&quot;&gt;&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;script&gt;</p>
+
+<p class=MsoNormal>        function saveData() {</p>
+
+<p class=MsoNormal>            const name =
+document.getElementById(&quot;name&quot;).value;</p>
+
+<p class=MsoNormal>            const age =
+document.getElementById(&quot;age&quot;).value;</p>
+
+<p class=MsoNormal>            const conditions =
+document.getElementById(&quot;conditions&quot;).value;</p>
+
+<p class=MsoNormal>            const medications =
+document.getElementById(&quot;medications&quot;).value;</p>
+
+<p class=MsoNormal>            const symptoms =
+document.getElementById(&quot;symptoms&quot;).value;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            const summary = `</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt;
+${name}&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Age:&lt;/strong&gt;
+${age}&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Medical
+Conditions:&lt;/strong&gt; ${conditions}&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Current
+Medications:&lt;/strong&gt; ${medications}&lt;/p&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;&lt;strong&gt;Recent
+Symptoms:&lt;/strong&gt; ${symptoms}&lt;/p&gt;</p>
+
+<p class=MsoNormal>            `;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>           
+document.getElementById(&quot;summary&quot;).innerHTML = summary;</p>
+
+<p class=MsoNormal>            alert(&quot;Medical history saved!&quot;);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>    &lt;/script&gt;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
